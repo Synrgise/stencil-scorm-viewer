@@ -1,10 +1,15 @@
-# Hive Stencil SCORM Viewer
+# This Project was originally forked from Hive Stencil SCORM Viewer
+
+The main reason for the fork is a numbr of issues in the repo and the need to enhance/customize it further
+
+
+# SCORM Viewer
 Web component that allows you to render SCORM (e-learning) courses in your web (and Ionic native) applications. Injects custom event hooks and binding to support **offline** tracking of courses without a 3rd party library.
 
 The SCORM course __must__ be served on the same origin (host:port) as the consuming application to avoid cross-frame injection.
 
 ## Installation
-- `npm install @teamhive/stencil-scorm-viewer`
+- `npm install @synrgise/stencil-scorm-viewer`
 
 ## Usage
 - `<hive-scorm-viewer src="http://www.mydomain/index.html"></hive-scorm-viewer>`
@@ -14,7 +19,7 @@ In your `angular.json` file add the following assets matcher in your `projects.a
 ```
 {
     "glob": "**/*",
-    "input": "node_modules/@teamhive/stencil-scorm-viewer/dist/scormviewer",
+    "input": "node_modules/@synrgise/stencil-scorm-viewer/dist/scormviewer",
     "output": "./scormviewer"
 }
 ```
@@ -22,7 +27,7 @@ In your `angular.json` file add the following assets matcher in your `projects.a
 In your main `AppModule` (i.e. `app.module.ts`) add the following import statement:
 
 ```
-import '@teamhive/stencil-scorm-viewer/dist/scormviewer';
+import '@synrgise/stencil-scorm-viewer/dist/scormviewer';
 ```
 
 ### Events
